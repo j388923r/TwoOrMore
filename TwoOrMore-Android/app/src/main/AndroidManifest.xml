@@ -30,12 +30,29 @@
 
         <activity
             android:name=".PrayerMapActivity"
-            android:label="@string/title_activity_prayer_map">
+            android:label="@string/title_activity_prayer_map"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewPrayerEventActivity"
+            android:label="@string/title_activity_create_prayer_event"
+            android:value="com.twoormore.twoormore_android.MainActivity" />
+        <activity
+            android:name=".SavedPrayerEventsActivity"
+            android:label="@string/title_activity_saved_prayer_events"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twoormore.twoormore_android.MainActivity" />
         </activity>
     </application>
 
