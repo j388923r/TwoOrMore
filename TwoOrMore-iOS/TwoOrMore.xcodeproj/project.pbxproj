@@ -7,16 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CC885AE3CB52CDFA8BDA843 /* libPods-TwoOrMore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69E4B209992535CD6B7FEDE /* libPods-TwoOrMore.a */; };
+		4649E6301CE95487007E26C8 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E62E1CE95487007E26C8 /* libicucore.A.tbd */; };
+		4649E6311CE95487007E26C8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E62F1CE95487007E26C8 /* libicucore.tbd */; };
+		4649E6331CE954D6007E26C8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E6321CE954D6007E26C8 /* libc++.tbd */; };
+		4649E6351CE954E1007E26C8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E6341CE954E1007E26C8 /* CFNetwork.framework */; };
+		4649E6371CE954E8007E26C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E6361CE954E8007E26C8 /* Security.framework */; };
+		4649E6391CE954F2007E26C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4649E6381CE954F2007E26C8 /* SystemConfiguration.framework */; };
 		4689CB771CC05C8700B880F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689CB761CC05C8700B880F0 /* AppDelegate.swift */; };
 		4689CB791CC05C8700B880F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689CB781CC05C8700B880F0 /* ViewController.swift */; };
 		4689CB7C1CC05C8700B880F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4689CB7A1CC05C8700B880F0 /* Main.storyboard */; };
 		4689CB7F1CC05C8700B880F0 /* TwoOrMore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4689CB7D1CC05C8700B880F0 /* TwoOrMore.xcdatamodeld */; };
 		4689CB811CC05C8700B880F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4689CB801CC05C8700B880F0 /* Assets.xcassets */; };
 		4689CB841CC05C8700B880F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4689CB821CC05C8700B880F0 /* LaunchScreen.storyboard */; };
+		46921FFC1D0DD53C0002A965 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46921FFB1D0DD53C0002A965 /* WelcomeController.swift */; };
+		46921FFE1D0DF73F0002A965 /* PrayerScripturesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46921FFD1D0DF73F0002A965 /* PrayerScripturesDB.swift */; };
+		469220201D0E36D60002A965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4692201F1D0E36D60002A965 /* GoogleService-Info.plist */; };
+		4692202C1D0E56B90002A965 /* PrayerRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692202B1D0E56B90002A965 /* PrayerRequestController.swift */; };
+		4692202E1D14E6E00002A965 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4692202D1D14E6E00002A965 /* MapKit.framework */; };
+		469220301D1501040002A965 /* JoinPrayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692202F1D1501040002A965 /* JoinPrayerController.swift */; };
+		469220321D1517140002A965 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469220311D1517140002A965 /* MapController.swift */; };
+		469220341D16551D0002A965 /* PrayerMeetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469220331D16551D0002A965 /* PrayerMeetup.swift */; };
+		469220361D16632D0002A965 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469220351D16632D0002A965 /* ListController.swift */; };
+		469220381D16695D0002A965 /* PrayerMeetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469220371D16695D0002A965 /* PrayerMeetupCell.swift */; };
+		4692203A1D166C320002A965 /* InviteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469220391D166C320002A965 /* InviteController.swift */; };
+		4692203C1D1CF1820002A965 /* MeetupDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692203B1D1CF1820002A965 /* MeetupDetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4649E62E1CE95487007E26C8 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		4649E62F1CE95487007E26C8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		4649E6321CE954D6007E26C8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4649E6341CE954E1007E26C8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4649E6361CE954E8007E26C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4649E6381CE954F2007E26C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4649E63A1CE970CD007E26C8 /* TwoOrMore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoOrMore-Bridging-Header.h"; sourceTree = "<group>"; };
 		4689CB731CC05C8700B880F0 /* TwoOrMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoOrMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4689CB761CC05C8700B880F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4689CB781CC05C8700B880F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +49,18 @@
 		4689CB801CC05C8700B880F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4689CB831CC05C8700B880F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4689CB851CC05C8700B880F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E139F113BEB144D494D2525 /* Pods-TwoOrMore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoOrMore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoOrMore/Pods-TwoOrMore.debug.xcconfig"; sourceTree = "<group>"; };
-		C6784CE8C71251294C3C2E20 /* Pods-TwoOrMore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoOrMore.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoOrMore/Pods-TwoOrMore.release.xcconfig"; sourceTree = "<group>"; };
-		C69E4B209992535CD6B7FEDE /* libPods-TwoOrMore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwoOrMore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46921FFB1D0DD53C0002A965 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		46921FFD1D0DF73F0002A965 /* PrayerScripturesDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerScripturesDB.swift; sourceTree = "<group>"; };
+		4692201F1D0E36D60002A965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4692202B1D0E56B90002A965 /* PrayerRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerRequestController.swift; sourceTree = "<group>"; };
+		4692202D1D14E6E00002A965 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4692202F1D1501040002A965 /* JoinPrayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPrayerController.swift; sourceTree = "<group>"; };
+		469220311D1517140002A965 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		469220331D16551D0002A965 /* PrayerMeetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerMeetup.swift; sourceTree = "<group>"; };
+		469220351D16632D0002A965 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		469220371D16695D0002A965 /* PrayerMeetupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerMeetupCell.swift; sourceTree = "<group>"; };
+		469220391D166C320002A965 /* InviteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteController.swift; sourceTree = "<group>"; };
+		4692203B1D1CF1820002A965 /* MeetupDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupDetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,37 +68,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC885AE3CB52CDFA8BDA843 /* libPods-TwoOrMore.a in Frameworks */,
+				4649E6391CE954F2007E26C8 /* SystemConfiguration.framework in Frameworks */,
+				4649E6371CE954E8007E26C8 /* Security.framework in Frameworks */,
+				4649E6351CE954E1007E26C8 /* CFNetwork.framework in Frameworks */,
+				4649E6331CE954D6007E26C8 /* libc++.tbd in Frameworks */,
+				4692202E1D14E6E00002A965 /* MapKit.framework in Frameworks */,
+				4649E6301CE95487007E26C8 /* libicucore.A.tbd in Frameworks */,
+				4649E6311CE95487007E26C8 /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040BBBA52C70AAE74D92438D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6E139F113BEB144D494D2525 /* Pods-TwoOrMore.debug.xcconfig */,
-				C6784CE8C71251294C3C2E20 /* Pods-TwoOrMore.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3F80D11216BAFCCD2B5AF8A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C69E4B209992535CD6B7FEDE /* libPods-TwoOrMore.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4689CB6A1CC05C8700B880F0 = {
 			isa = PBXGroup;
 			children = (
 				4689CB751CC05C8700B880F0 /* TwoOrMore */,
 				4689CB741CC05C8700B880F0 /* Products */,
-				040BBBA52C70AAE74D92438D /* Pods */,
-				3F80D11216BAFCCD2B5AF8A7 /* Frameworks */,
+				F1DB694720628E7CD7185817 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +101,7 @@
 		4689CB751CC05C8700B880F0 /* TwoOrMore */ = {
 			isa = PBXGroup;
 			children = (
+				4692201F1D0E36D60002A965 /* GoogleService-Info.plist */,
 				4689CB761CC05C8700B880F0 /* AppDelegate.swift */,
 				4689CB781CC05C8700B880F0 /* ViewController.swift */,
 				4689CB7A1CC05C8700B880F0 /* Main.storyboard */,
@@ -87,8 +109,33 @@
 				4689CB821CC05C8700B880F0 /* LaunchScreen.storyboard */,
 				4689CB851CC05C8700B880F0 /* Info.plist */,
 				4689CB7D1CC05C8700B880F0 /* TwoOrMore.xcdatamodeld */,
+				4649E63A1CE970CD007E26C8 /* TwoOrMore-Bridging-Header.h */,
+				46921FFB1D0DD53C0002A965 /* WelcomeController.swift */,
+				4692202F1D1501040002A965 /* JoinPrayerController.swift */,
+				469220311D1517140002A965 /* MapController.swift */,
+				469220351D16632D0002A965 /* ListController.swift */,
+				469220391D166C320002A965 /* InviteController.swift */,
+				4692202B1D0E56B90002A965 /* PrayerRequestController.swift */,
+				469220371D16695D0002A965 /* PrayerMeetupCell.swift */,
+				46921FFD1D0DF73F0002A965 /* PrayerScripturesDB.swift */,
+				469220331D16551D0002A965 /* PrayerMeetup.swift */,
+				4692203B1D1CF1820002A965 /* MeetupDetailsController.swift */,
 			);
 			path = TwoOrMore;
+			sourceTree = "<group>";
+		};
+		F1DB694720628E7CD7185817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4692202D1D14E6E00002A965 /* MapKit.framework */,
+				4649E6381CE954F2007E26C8 /* SystemConfiguration.framework */,
+				4649E6361CE954E8007E26C8 /* Security.framework */,
+				4649E6341CE954E1007E26C8 /* CFNetwork.framework */,
+				4649E6321CE954D6007E26C8 /* libc++.tbd */,
+				4649E62E1CE95487007E26C8 /* libicucore.A.tbd */,
+				4649E62F1CE95487007E26C8 /* libicucore.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,12 +145,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4689CB881CC05C8700B880F0 /* Build configuration list for PBXNativeTarget "TwoOrMore" */;
 			buildPhases = (
-				53E1C991E92321656A0C2D44 /* Check Pods Manifest.lock */,
 				4689CB6F1CC05C8700B880F0 /* Sources */,
 				4689CB701CC05C8700B880F0 /* Frameworks */,
 				4689CB711CC05C8700B880F0 /* Resources */,
-				52F3B433E51DDEA0AC5093E8 /* Embed Pods Frameworks */,
-				AC6B3F435752A1ABEEAD77B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +170,11 @@
 				TargetAttributes = {
 					4689CB721CC05C8700B880F0 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -153,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4689CB841CC05C8700B880F0 /* LaunchScreen.storyboard in Resources */,
+				469220201D0E36D60002A965 /* GoogleService-Info.plist in Resources */,
 				4689CB811CC05C8700B880F0 /* Assets.xcassets in Resources */,
 				4689CB7C1CC05C8700B880F0 /* Main.storyboard in Resources */,
 			);
@@ -160,61 +210,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		52F3B433E51DDEA0AC5093E8 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoOrMore/Pods-TwoOrMore-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53E1C991E92321656A0C2D44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AC6B3F435752A1ABEEAD77B7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoOrMore/Pods-TwoOrMore-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4689CB6F1CC05C8700B880F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4692203A1D166C320002A965 /* InviteController.swift in Sources */,
+				469220321D1517140002A965 /* MapController.swift in Sources */,
+				469220361D16632D0002A965 /* ListController.swift in Sources */,
+				469220341D16551D0002A965 /* PrayerMeetup.swift in Sources */,
+				4692202C1D0E56B90002A965 /* PrayerRequestController.swift in Sources */,
 				4689CB7F1CC05C8700B880F0 /* TwoOrMore.xcdatamodeld in Sources */,
+				4692203C1D1CF1820002A965 /* MeetupDetailsController.swift in Sources */,
+				469220381D16695D0002A965 /* PrayerMeetupCell.swift in Sources */,
+				469220301D1501040002A965 /* JoinPrayerController.swift in Sources */,
 				4689CB791CC05C8700B880F0 /* ViewController.swift in Sources */,
+				46921FFE1D0DF73F0002A965 /* PrayerScripturesDB.swift in Sources */,
+				46921FFC1D0DD53C0002A965 /* WelcomeController.swift in Sources */,
 				4689CB771CC05C8700B880F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,25 +338,40 @@
 		};
 		4689CB891CC05C8700B880F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E139F113BEB144D494D2525 /* Pods-TwoOrMore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Firebase",
+				);
 				INFOPLIST_FILE = TwoOrMore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.TwoOrMore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwoOrMore/TwoOrMore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4689CB8A1CC05C8700B880F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6784CE8C71251294C3C2E20 /* Pods-TwoOrMore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Firebase",
+				);
 				INFOPLIST_FILE = TwoOrMore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.mit.TwoOrMore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwoOrMore/TwoOrMore-Bridging-Header.h";
 			};
 			name = Release;
 		};
