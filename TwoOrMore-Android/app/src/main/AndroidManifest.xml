@@ -29,8 +29,8 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".PrayerMapActivity"
-            android:label="@string/title_activity_prayer_map"></activity>
+            android:name=".PrayerMapFragment"
+            android:label="@string/title_activity_prayer_map" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
@@ -46,14 +46,17 @@
             android:label="@string/title_activity_create_prayer_event"
             android:value="com.twoormore.twoormore_android.MainActivity" />
         <activity
-            android:name=".SavedPrayerEventsActivity"
-            android:label="@string/title_activity_saved_prayer_events"
+            android:name=".JoinPrayerEventActivity"
+            android:label="@string/title_activity_join_prayer_event"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.twoormore.twoormore_android.MainActivity" />
         </activity>
+        <activity android:name=".LocationSearchActivity"></activity>
     </application>
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
