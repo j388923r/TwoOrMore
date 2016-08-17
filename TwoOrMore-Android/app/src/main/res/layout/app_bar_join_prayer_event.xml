@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.twoormore.twoormore_android.SavedPrayerEventsActivity">
+    tools:context="com.twoormore.twoormore_android.JoinPrayerEventActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_saved_prayer_events" />
+    <include layout="@layout/content_join_prayer_event" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

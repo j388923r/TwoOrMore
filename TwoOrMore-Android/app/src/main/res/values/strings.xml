@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">TwoOrMore</string>
+
+    <string name="bible_dialog_ok">OK</string>
+    <string name="bible_dialog_cancel">cancel</string>
+
     <string name="title_activity_prayer_map">Prayer Map</string>
     <string name="title_activity_main">TwoOrMore</string>
     <string name="title_activity_create_prayer_event">New Prayer Event</string>
@@ -10,7 +14,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="new_event">Create Prayer Event</string>
-    <string name="hint_eventName">Event Name</string>
+    <string name="hint_eventName">Title</string>
     <string name="hint_description">Description (Optional)</string>
     <string name="textView_bibleVerseLabel">Bible Verses</string>
     <string name="textView_dateLabel">Date</string>
@@ -20,4 +24,9 @@
     <string name="textView_dateValue"></string>
     <string name="textView_timeValue"></string>
     <string name="title_activity_saved_prayer_events">SavedPrayerEventsActivity</string>
+    <string name="title_activity_join_prayer_event">Join a Prayer Event</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newPrayerEvent_btnSave">Save</string>
 </resources>

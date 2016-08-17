@@ -1,0 +1,30 @@
+bible.com/59/lev.1.3-4.ESV
+
+-Dialog similar to Bible app (externality)
+    -Pick book, then verses:
+
+    ----------------------------
+    | Version: [ESV]            |
+    |    Book: [John]           |
+    |                           |
+    |   Start: [3]:[16]         |
+    |     End: [4]:[1]          |
+    |   Have the Bible App?     |
+    |   Get Verses from there.  |
+    ----------------------------
+    Dropdowns allow you to pick the range; from that, can build a URL
+    New Event --> List Dialogragment --> Bible verse fragment/dialog
+    Hint text
+    
+Storyboards:
+intro/loading pages
+
+Home:
+[join someone]  u
+[create prayer event]
+[submit prayer request]
+
+Join:
+-Show prayer map
+-can be public or private (MIT only to start)
+-Q: what is the scope

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "818205552746",
+    "firebase_url": "https://project-1986562042970828197.firebaseio.com",
+    "project_id": "project-1986562042970828197",
+    "storage_bucket": "project-1986562042970828197.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818205552746:android:0743edc69b97ebc5",
+        "android_client_info": {
+          "package_name": "com.twoormore.twoormore_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818205552746-bcovd3812t6e9m08le6m7u1pm0uilo5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYoTEy3FixPkttyfnu5ddF0EU6rp9pLXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

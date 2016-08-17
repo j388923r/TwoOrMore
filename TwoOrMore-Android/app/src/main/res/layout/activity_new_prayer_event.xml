@@ -30,26 +30,14 @@
         android:hint="@string/hint_description"/>
 
     <TextView
-        android:text="@string/textView_bibleVerseLabel"
+        android:text="@string/textView_dateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_description"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp"
-        android:id="@+id/textView_bibleVerseLabel"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-
-    <TextView
-        android:text="@string/textView_dateLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView_bibleVerseLabel"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="19dp"
-        android:id="@+id/textView_dateLabel"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:id="@+id/textView_dateLabel" />
 
     <TextView
         android:text="@string/textView_timeLabel"
@@ -58,8 +46,7 @@
         android:id="@+id/textView_timeLabel"
         android:layout_below="@+id/textView_dateLabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="@string/textView_locationLabel"
@@ -69,62 +56,56 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="14dp"
-        android:id="@+id/textView_locationLabel"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:layout_marginBottom="14dp"
+        android:id="@+id/textView_locationLabel" />
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView_timeValue"
         android:onClick="showTimePickerDialog"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
         android:layout_below="@+id/textView_dateValue"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView_dateValue"
         android:onClick="showDatePickerDialog"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:clickable="true"
         android:layout_above="@+id/textView_timeLabel"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Jn. 3:16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView_bibleVerseValue"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:layout_alignBottom="@+id/textView_bibleVerseLabel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/textView_dateValue"
-        android:layout_alignStart="@+id/textView_dateValue"
-        android:layout_alignTop="@+id/textView_bibleVerseLabel" />
-
-    <TextView
-        android:text="1 Main St.\nNew York, NY 11111"
         android:gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView_locationValue"
-        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:onClick="showLocationSearch"
+        android:clickable="true"
         android:layout_alignTop="@+id/textView_locationLabel"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/newPrayerEvent_miniMap"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textView_locationLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <Button
-        android:text="Save"
+        android:text="@string/newPrayerEvent_btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/textView_timeValue"
-        android:layout_toStartOf="@+id/textView_timeValue"
+        android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="62dp"

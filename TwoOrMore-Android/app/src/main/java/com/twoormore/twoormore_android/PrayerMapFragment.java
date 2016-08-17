@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
 
-public class PrayerMapActivity extends FragmentActivity implements OnMapReadyCallback {
+public class PrayerMapFragment extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
