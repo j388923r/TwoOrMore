@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class JoinPrayerController: UIViewController, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
 
@@ -17,6 +19,10 @@ class JoinPrayerController: UIViewController, UISearchControllerDelegate, UISear
     @IBOutlet weak var mapView: UIView!
     
     var searchController : UISearchController!
+    
+    var ref : FIRDatabaseReference!
+    
+    var prayerMeetings = [PrayerMeetup]()
     
     override func viewDidLoad() {
         self.searchController = UISearchController(searchResultsController:  nil)
@@ -33,20 +39,29 @@ class JoinPrayerController: UIViewController, UISearchControllerDelegate, UISear
         self.navigationItem.titleView = searchController.searchBar
         self.navigationItem.title = "Join Prayer"
         
-        var queryUrl : String = "http://whereis.mit.edu/search?type=query&q=building%205&output=json"
-        
-        let building5Loc = CLLocationCoordinate2D(latitude: 42.35871452, longitude: -71.09292322)
-        
-        let annotation = PrayerMeetup(title: "Prayer for peace", location: "5-119", coordinate: building5Loc)
-        annotation.details = "We need peace on this campus."
-        
-        if let listController = self.childViewControllers[0] as? ListController {
-            listController.prayerMeetups.append(annotation)
-        }
-        
-        if let mapController = self.childViewControllers[1] as? MapController {
-            mapController.prayerMeetings.append(annotation)
-        }
+        self.ref = FIRDatabase.database().reference()
+        ref.child("meetups").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            let storedMeetups = snapshot.value as! NSDictionary
+            for (_, value) in storedMeetups {
+                let storedTitle = value["title"] as! String
+                let storedLocation = value["location"] as! String
+                self.prayerMeetings.append(PrayerMeetup(title: storedTitle, location: storedLocation, latitude: Double(value["latitude"] as! String)!, longitude: Double(value["longitude"] as! String)!, time: NSDate(timeIntervalSince1970: Double(value["time"] as! String)!)))
+                
+            }
+            
+            if let listController = self.childViewControllers[0] as? ListController {
+                if let mapController = self.childViewControllers[1] as? MapController {
+                    for i in 0..<self.prayerMeetings.count {
+                        mapController.mapView.addAnnotation(self.prayerMeetings[i])
+                        
+                        mapController.prayerMeetings = self.prayerMeetings
+                        listController.prayerMeetings = self.prayerMeetings
+                        
+                        listController.tableView.reloadData()
+                    }
+                }
+            }
+        })
     }
     
     @IBAction func segmentChanged(sender: UISegmentedControl) {

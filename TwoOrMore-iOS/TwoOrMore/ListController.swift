@@ -10,29 +10,29 @@ import UIKit
 
 class ListController: UITableViewController {
     
-    var prayerMeetups = [PrayerMeetup]()
+    var prayerMeetings = [PrayerMeetup]()
     
     override func viewDidLoad() {
         
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return prayerMeetups.count
+        return prayerMeetings.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "prayerMeetupCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         
-        cell.textLabel?.text = prayerMeetups[indexPath.row].title
-        cell.detailTextLabel?.text = prayerMeetups[indexPath.row].subtitle
+        cell.textLabel?.text = prayerMeetings[indexPath.row].title
+        cell.detailTextLabel?.text = prayerMeetings[indexPath.row].location
         
         return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? MeetupDetailsController {
-            destination.prayerMeetup = prayerMeetups[(tableView.indexPathForSelectedRow?.row)!]
+            destination.prayerMeetup = prayerMeetings[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
 }

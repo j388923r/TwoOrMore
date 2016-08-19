@@ -1,1 +1,3 @@
 TwoOrMore-Node/node_modules/
+TwoOrMore-iOS/*.framework/
+TwoOrMore-Android/.idea/

@@ -8,32 +8,35 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class MapController: UIViewController, MKMapViewDelegate  {
 
-    
+    var ref : FIRDatabaseReference!
     @IBOutlet weak var mapView: MKMapView!
+    var centerCoordinate : CLLocationCoordinate2D?
     var prayerMeetings = [PrayerMeetup]()
     var selectedMeetup : PrayerMeetup?
     
     override func viewDidLoad() {
+        
         mapView.delegate = self
+        
+        if let _ = centerCoordinate {
+            
+        }
+        else {
+            centerCoordinate = CLLocationCoordinate2D(latitude: 42.35871452, longitude: -71.09292322)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
-        print(mapView.centerCoordinate)
-        let building5Loc = CLLocationCoordinate2D(latitude: 42.35871452, longitude: -71.09292322)
-        mapView.centerCoordinate = building5Loc
-        print(mapView.centerCoordinate)
+        mapView.centerCoordinate = centerCoordinate!
         
         var myRegion = mapView.region
-        myRegion.span.latitudeDelta *= 0.00005
-        myRegion.span.longitudeDelta *= 0.00005
+        myRegion.span.latitudeDelta *= 0.0001
+        myRegion.span.longitudeDelta *= 0.0001
         mapView.setRegion(myRegion, animated: true)
-        
-        for i in 0..<prayerMeetings.count {
-            mapView.addAnnotation(prayerMeetings[i])
-        }
     }
     
     func mapViewDidFinishLoadingMap(mapView: MKMapView) {

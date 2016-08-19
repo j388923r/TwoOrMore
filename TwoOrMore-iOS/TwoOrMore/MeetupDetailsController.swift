@@ -25,7 +25,7 @@ class MeetupDetailsController: UIViewController {
         descriptionDisplay.text = prayerMeetup.details
         
         let formatter = NSDateFormatter()
-        formatter.dateStyle = .ShortStyle
+        formatter.dateStyle = .MediumStyle
         formatter.timeStyle = .ShortStyle
         
         timeDisplay.text = formatter.stringFromDate(prayerMeetup.time!)
